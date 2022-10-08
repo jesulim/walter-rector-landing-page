@@ -1,17 +1,16 @@
 ---
 import { generateImage } from "astro-eleventy-img";
-import { Icon } from "astro-icon";
 import Starfield from "~/components/starfield.astro";
 import HeroImage from "~/components/hero-image.astro";
 
 const widths = [450, 800];
 const sizes = "(min-width: 640px) 42vw, 67vw";
 
-const { webp, avif, png } = generateImage("src/assets/astronaut.png", {
+const { webp, avif, png } = generateImage("src/assets/walter.png", {
   widths,
   formats: ["webp", "avif", "png"],
-  outputDir: "public/assets/images/astronaut",
-  urlPath: "/assets/images/astronaut",
+  outputDir: "public/assets/images/walter",
+  urlPath: "/assets/images/walter",
 });
 
 const avifSrcset = avif.map(({ srcset }) => srcset).join(",");
@@ -28,13 +27,13 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
     <h2
       class="flex flex-col self-end gap-2 sm:gap-4 sm:self-auto sm:justify-self-end"
     >
-      <Icon name="logomark" class="h-24 text-white md:h-32" />
+      <img src="/logo.png" class="h-24 text-white md:h-32" />
       <div
-        class="font-extrabold tracking-tighter text-center text-8xl gradient-text"
+        class="font-extrabold tracking-tighter text-center text-8xl text-transparent bg-clip-text bg-gradient-to-b from-red-600 to-blue-700"
       >
-        Build fast
-        <br /> websites,
-        <br /> faster.
+        Walter
+        <br /> Arizaga
+        <br /> Rector
       </div>
     </h2>
     <picture
