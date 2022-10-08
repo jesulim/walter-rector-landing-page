@@ -27,7 +27,7 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
     <h1
       class="flex flex-col self-end gap-2 sm:gap-4 sm:self-auto sm:justify-self-end"
     >
-      <img src="/logo.png" class="h-24 text-white md:h-32" />
+      <img src="/logo.png" class="h-24 text-white md:h-32 mt-8" />
       <div
         class="font-extrabold tracking-tighter text-center text-8xl text-transparent bg-clip-text bg-gradient-to-b from-red-600 to-blue-700 mt-4"
       >
@@ -47,7 +47,7 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
         src={png[0].url}
         width={png[0].width}
         height={png[0].height}
-        alt="A floating astronaut in a space suit"
+        alt="Walter Arizaga"
       />
     </picture>
   </div>
@@ -62,20 +62,6 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
 </noscript>
 
 <style>
-  @keyframes float {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-
-    100% {
-      transform: translate3d(0, 30px, 0);
-    }
-  }
-
-  picture {
-    animation: float linear 2.5s infinite alternate;
-  }
-
   @media (prefers-reduced-motion: reduce) {
     picture {
       @apply animate-none;
