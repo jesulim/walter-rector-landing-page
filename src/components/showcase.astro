@@ -1,7 +1,5 @@
 ---
 import ContentSection from "~/components/content-section.astro";
-import ShowcaseCard from "~/components/showcase-card.astro";
-import sites from "~/data/showcase/sites.json";
 ---
 
 <ContentSection title="Showcase" id="showcase">
@@ -12,15 +10,43 @@ import sites from "~/data/showcase/sites.json";
   </Fragment>
   <div class="max-w-6xl space-y-2">
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {
-        sites.map(({ title, image, url }) => (
-          <ShowcaseCard title={title} image={image} url={url} />
-        ))
-      }
+      <iframe
+        class="w-full aspect-video"
+        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FWALTER.ARIZAGA.USFX%2Fvideos%2F1117561312216949%2F&show_text=false&width=560&t=0"
+        width="450"
+        height="314"
+        style="border:none;overflow:hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+      <iframe
+        class="w-full aspect-video"
+        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FWALTER.ARIZAGA.USFX%2Fvideos%2F1117561312216949%2F&show_text=false&width=560&t=0"
+        width="450"
+        height="314"
+        style="border:none;overflow:hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+      <iframe
+        class="w-full aspect-video"
+        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FWALTER.ARIZAGA.USFX%2Fvideos%2F1117561312216949%2F&show_text=false&width=560&t=0"
+        width="450"
+        height="314"
+        style="border:none;overflow:hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
     </div>
     <p class="text-sm text-right">
-      <a class="text-primary" href="https://astro.build/showcase/">
-        ...and more &rarr;
+      <a class="text-primary" href="https://www.facebook.com/WALTER.ARIZAGA.USFX">
+        ...y mas &rarr;
       </a>
     </p>
   </div>
