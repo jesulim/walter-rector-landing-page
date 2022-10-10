@@ -1,34 +1,10 @@
 ---
 import { Icon } from "astro-icon";
 import HeroImage from "~/components/hero-image.astro";
-
-const links = [
-  {
-    url: "https://www.facebook.com/WALTER.ARIZAGA.USFX",
-    description: "Walter Arizaga Fan-Page Facebook",
-    icon: "mdi:facebook",
-  }
-];
 ---
 
-<footer class="relative flex items-center justify-center h-64">
-  <div class="absolute inset-0 overflow-hidden opacity-40">
-    <HeroImage />
-    <!-- <img src="usfx.jpg" /> -->
-  </div>
-  <ul class="relative">
-    {
-      links.map((link) => (
-        <li>
-          <a
-            class="flex items-center justify-center w-16 h-16 p-4 border-2 border-current rounded-full"
-            href={link.url}
-          >
-            <span class="sr-only">{link.description}</span>
-            <Icon class="h-full" name={link.icon} />
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+<footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+  <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" class="hover:underline">Walter Rector™</a> Desarrollado por <a href="https://ivan-martinez.vercel.app/" class="hover:text-yellow-500">Ivan Martinez</a>.
+  </span>
 </footer>
+
