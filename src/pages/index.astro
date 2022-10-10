@@ -8,7 +8,6 @@ import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 
 const { site } = Astro;
-const image = new URL("social.jpg", site);
 const description =
   "Walter Arizaga Rector de la Universidad San Francisco Xavier Gestion 2022 - 2026";
 ---
@@ -47,7 +46,7 @@ const description =
     <meta property="og:title" content="Walter Rector" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content="https://walter-rector.vercel.app/social.jpg" />
     <meta property="og:url" content={site} />
     <meta name="twitter:card" content="summary_large_image" />
 
